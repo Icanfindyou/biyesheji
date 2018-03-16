@@ -97,3 +97,59 @@
         }
     }
 }
+
+.orderbgc{
+    z-index: 99;
+    position: absolute;
+    background: rgba(0,0,0,.4);
+    display: none;
+    .order-box{
+    position: absolute;
+    width: 890px;
+    overflow: hidden;
+    font-size: 14px;
+    background: white;
+    .orderimg{
+        float: left;
+    }
+    .orderconfi{
+        float: left;
+        width: 435px;
+        
+        margin:0 20px 45px 35px ;
+        h3{
+            font-size: 24px;
+            line-height: 30px;
+            padding-top: 50px;
+            color: #363636;
+        }
+        p{
+            line-height: 24px;           
+            color: #363636;
+            margin-top: 40px;
+        }
+        .button{
+            margin-top: 76px;
+            width: 160px;
+            height: 44px;
+            line-height: 44px;
+            border: 1px solid #68d381;
+            border-bottom-color: #58B36E;
+            border-radius: 4px;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            background: #68d381;
+        }
+        .close{
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            top: 26px;
+            right: 38px;
+            cursor: pointer;
+            background: url(../img/customerImg/close.png) no-repeat center center;
+        }
+    }
+}
+}

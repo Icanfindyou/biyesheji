@@ -1,4 +1,4 @@
-$(function(){
+;$(function(){
        $("header").load("header.html", function() {
                $(this).find(".menu-left").mouseover(function() {
                        $(this).addClass("mouseover")
