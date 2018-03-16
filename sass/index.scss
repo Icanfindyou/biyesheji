@@ -1,0 +1,215 @@
+@charset "UTF-8";
+.main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    position: relative;
+    padding-top: 100px;
+}
+
+.banner .bannerbox .bannerlist {
+    height: 370px;
+}
+
+.banner .bannerbox .bannerlist li {
+    position: absolute;
+}
+
+.banner .bannernav {
+    position: absolute;
+}
+
+.banner .bannernav li {
+    width: 11px;
+    height: 12px;
+    margin: 10px;
+    float: left;
+    cursor: pointer;
+}
+
+.banner .bannernav .odd {
+    background: url(../img/indexImg/odd.png) no-repeat center center;
+}
+
+.banner .bannernav .odd-on {
+    background: url(../img/indexImg/odd-on.png) no-repeat center center;
+}
+
+.banner .bannernav .even {
+    background: url(../img/indexImg/even.png) no-repeat center center;
+}
+
+.banner .bannernav .even-on {
+    background: url(../img/indexImg/even-on.png) no-repeat center center;
+}
+
+.banner .focus-left,
+.banner .focus-right {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 255px;
+    cursor: pointer;
+    display: none;
+}
+
+.banner .focus-left {
+    left: -25px;
+    background: url(../img/indexImg/banner-left.png) no-repeat center center;
+}
+
+.banner .focus-right {
+    right: -25px;
+    background: url(../img/indexImg/banner-right.png) no-repeat center center;
+}
+
+.banner .Customer-service {
+    width: 15px;
+    height: 87px;
+    background: url(../img/indexImg/online.png) no-repeat center center;
+    position: absolute;
+    top: 100px;
+    right: -30px;
+}
+
+.activity {
+    background-color: #f2ece4;
+    zoom: 1;
+}
+
+.activity:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+.activity .content {
+    width: 1100px;
+    height: 237px;
+    margin: 0 50px 0;
+    position: relative;
+}
+
+.activity .content .content-box {
+    position: absolute;
+    top: -75px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.activity .content .imglist {
+    background-color: #fefdf9;
+    overflow: hidden;
+}
+
+.activity .content .imglist li {
+    width: 16.6%;
+    float: left;
+    margin: 40px 0 6px;
+}
+
+.activity .content .imglist li a {
+    text-align: center;
+    color: #483932;
+}
+
+.activity .content .imglist li a img {
+    display: inline-block;
+    width: 130px;
+}
+
+.activity .content .imglist li a p {
+    font-size: 12px;
+    line-height: 52px;
+    font-weight: bold;
+}
+
+.activity .content .button {
+    overflow: hidden;
+    border-top: 1px solid #F2ECE4;
+}
+
+.activity .content .button .button-left,
+.activity .content .button .button-right {
+    width: 50%;
+    font-size: 14px;
+    float: left;
+    text-align: center;
+    line-height: 59px;
+    padding-bottom: 21px;
+}
+
+.activity .content .button .button-left {
+    background-color: #66d08c;
+}
+
+.activity .content .button .button-left a {
+    color: #fffef9;
+}
+
+.activity .content .button .button-right {
+    background-color: #f3fcf6;
+    color: #84b87b;
+}
+
+.activity .imgbanner a img {
+    display: block;
+    margin-top: 10px;
+}
+
+.download {
+    overflow: hidden;
+    padding-bottom: 26px;
+    background: url(../img/indexImg/appdown-bg.png) no-repeat center center;
+}
+
+.download .download-left {
+    float: left;
+    width: 350px;
+    margin: 24px 0 0 116px;
+}
+
+.download .download-left h3 {
+    line-height: 69px;
+    font-size: 25px;
+    color: #e94f4f;
+    background: url(../img/indexImg/appdown-redtop.png) no-repeat left top;
+}
+
+.download .download-left li {
+    font-size: 14px;
+    line-height: 26px;
+    color: #503c3c;
+    font-weight: 600;
+    text-indent: 30px;
+    background: url(../img/indexImg/appdown-redselect.png) no-repeat left center;
+}
+
+.download .download-right {
+    margin-top: 79px;
+    float: left;
+}
+
+.download .download-right dl {
+    float: left;
+    margin-right: 54px;
+}
+
+.download .download-right dl dd {
+    text-align: center;
+    font-size: 11px;
+    line-height: 28px;
+    border: 1px solid #fc4545;
+    border-radius: 14px;
+    margin-top: 10px;
+    transition: all 0.3s ease-out;
+    cursor:pointer;
+    &:hover {
+        background-color: #f04e4e;
+        color: #FFF;
+    }
+}
