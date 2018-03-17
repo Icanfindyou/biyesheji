@@ -42,7 +42,6 @@
             width: 1012px;
             
             .customer-home{
-                display: none;
                 .home-login{
                     background: #fdfbfa;
                     overflow: hidden;
@@ -98,9 +97,155 @@
                     img{
                         padding: 20px 0 40px;
                     }
+                }                       
+            }
+            
+            .card-coupons{
+                box-sizing: border-box;
+                padding: 0 0 80px 30px;
+                overflow: hidden;
+                background:#ffffff;
+                margin-bottom: 20px;
+                .card-coupons-head{
+                    height: 70px;
+                    width: 730px;
+                    border-bottom: 1px solid #e0e3e5 ;
+                    .card-use,.card-hestory{
+                        font-size: 16px;
+                        line-height: 50px;
+                        padding-top: 20px;
+                        width: 130px;
+                        color: #363636;
+                        border-bottom: 1px solid  #e0e3e5;
+                        float: left;
+                    }
+                    .click{
+                       border-bottom: 1px solid  #e5534e; 
+                       color: #e5534e;
+                    }
+                }
+                .card-coupons-confi{
+                    width: 352px;
+                    height: 149px;
+                    margin: 25px 30px 0 0;
+                    float: left;
+                    background: url(../img/customerImg/coupon-bg.png) no-repeat center center;
+                    .card-coupons-dest{                       
+                        position: relative;
+                        .miaosu,.time{
+                            width: 175px;
+                            margin-left: 90px;
+                            word-break: break-all;
+                        }
+                        .miaosu{
+                            padding-top: 20px;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #333333;
+                        }
+                        .time{
+                            font-size: 12px;
+                            color: #999999;
+                            line-height: 33px;
+                        }
+                        .button{
+                            width: 100px;
+                            margin-left: 125px;
+                            font-size: 14px;
+                            line-height: 35px;
+                            border-radius: 5px;
+                            text-align: center;
+                            color: #FFF;
+                            background: #e46255;
+                            cursor: pointer;
+                        }
+                        .tanhao{
+                            position: absolute;                         
+                            top: 25px;
+                            right: 30px;
+                            cursor: pointer;                      
+                        }
+                        .dest-img{
+                            width: 50px;
+                            position: absolute;
+                            left: 25px;
+                            top: 30px;
+                        }
+                    }
+                }
+            }
+        
+            .k-gold{
+                
+                .k-gold-top{
+                    text-align: center;
+                    height: 210px;
+                    position: relative;
+                    margin-bottom: 20px;
+                    background: url(../img/customerImg/kgold-bg.png) no-repeat center center;
+                    .k-sum{
+                        font-size: 20px;
+                        line-height: 62px;
+                        margin-top: 18px;
+                        color: #333333;
+                    }
+                    b{
+                        font-size: 50px;
+                        line-height: 50px;
+                        height: 50px;
+                        color: #f1554b;
+                        font-weight: bolder;
+                    }
+                    .dest{
+                        font-size: 14px;
+                        line-height: 52px;
+                        color: #888888;
+                        padding-bottom: 29px;
+                    }
+                    .download-app{
+                        width: 173px;
+                        font-size: 12px;
+                        line-height: 40px;
+                        color: #f1554b;
+                        border: 1px solid #f1554b ;
+                        position: absolute;
+                        right: 20px;
+                        top: 85px;
+                    }
                 }
             
-            
+                .k-gold-content{
+                    box-sizing: border-box;
+                    padding-left: 36px;
+                    background: #fff;
+                    .head{
+                        overflow: hidden;
+                        .had,.used{
+                        width: 130px;
+                        font-size: 14px;
+                        line-height: 58px;
+                        padding-top: 18px;
+                        float: left;
+                        text-align: center;
+                        border-bottom: 1px solid #fff;
+                        }
+                        .click{
+                            border-bottom: 1px solid #f1554b ;
+                        }
+                    }
+                    .Concrete{
+                        min-height: 440px;
+                        p{
+                           font-size: 22px;
+                            line-height: 28px; 
+                            text-indent: 35px;
+                            background: url;
+                            margin-top: 150px;
+                            text-align: center;
+                        }
+                    }
+                    
+                }
             }
         }
     }
