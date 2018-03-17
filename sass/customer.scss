@@ -1,0 +1,107 @@
+.bgimg{
+    background: url(../img/customerImg/home-top.png) no-repeat center 70px;
+    background-color: #efeee9;
+    font-size: 14px;
+    padding-top: 70px;
+    .customer{
+        overflow: hidden;
+        padding-top: 200px;
+        width: 1200px;
+        margin: 0 auto;
+        .customer-left{
+            float: left;
+            background: #fff;
+            ul{
+                width: 160px;
+                li{
+                    width: 160px;
+                    color:#947070;
+                    overflow: hidden;
+                    img{
+                        float: left;
+                        margin: 20px 8px 0 25px ;
+                    }
+                    p{
+                        float: left;
+                        line-height: 60px;
+                    }
+                    .click{
+                        width: 155px;
+                        border-left: 5px solid #e60013 ;
+                        color: #e60013;
+                    }
+                    .border{
+                        border: 1px solod #efeee9;
+                    }
+                }
+            }
+        }
+        .customer-right{
+            float: left;
+            margin-left: 28px;
+            width: 1012px;
+            
+            .customer-home{
+                display: none;
+                .home-login{
+                    background: #fdfbfa;
+                    overflow: hidden;
+                    img{
+                        float: left;
+                        margin:10px 20px 30px 30px ;
+                    }
+                    .button{
+                        float: left;
+                        margin-top: 30px;
+                        width: 130px;
+                        text-align: center;
+                        background-color: #f04e4e;
+                        line-height: 40px;
+                        color: #fff;
+                    }
+                }
+                .customer-property{
+                    background: #fff;
+                    width: 337px;
+                    height: 234px;
+                    box-sizing: border-box;
+                    border-left: 1px solid #eceaea;
+                    padding-left: 83px;
+                    float: left;
+                    .my-property{
+                        overflow: hidden;
+                        margin: 55px 0 0 0;
+                        img{
+                            float: left; 
+                            margin-right: 26px;                      
+                        }
+                        p{
+                            float: left;
+                            line-height: 60px;
+                            font-size: 20px;
+                            color: #888;
+                        }
+                    }
+                    .number{
+                        text-indent: 7px;
+                        font-size: 36px;
+                        color: #555555;
+                        margin-top: 20px;
+                        span{
+                            font-size: 16px;
+                            margin-left: 5px;
+                        }
+                    }
+                    
+                }
+                .bottom{
+                    img{
+                        padding: 20px 0 40px;
+                    }
+                }
+            
+            
+            }
+        }
+    }
+}
