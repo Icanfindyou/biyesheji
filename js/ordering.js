@@ -3,6 +3,7 @@
 	var orderbgc = $(".orderbgc");
 	var products = $(".products");
 	var imglist = products.find("dt");
+	var orderbox =  $(".order-box");
 	lilist.eq(0).addClass("focus").end().each(function(){
 		$(this).click(function(){
 			$(this).addClass("focus").siblings().removeClass("focus")
@@ -11,24 +12,27 @@
 		})
 	})
 	orderbgc.css({width:function(){
-		return $(window).width() -21
+		return $(document).width()
 	},height:function(){
-		return $(window).height()
-	}}).find(".order-box").css({"top":function(){
-		return (orderbgc.height()-400)/2
+		return $(document).height()
+	}});
+	orderbox.css({"top":function(){
+		return ($(window).height()-orderbox.height())/2
 	},"left":function(){
-		return (orderbgc.width()-orderbgc.find(".order-box").width())/2
+		return ($(window).width()-orderbox.width())/2
 	}})
 	$(window).scroll(function(){
-		orderbgc.css("top",$(this).scrollTop())
+		orderbox.css("top",$(this).scrollTop()+($(window).height()-orderbox.height())/2)
 	})
 	//图片点击添加弹窗
 	imglist.click(function(){
 		orderbgc.css("display","block")
+		orderbox.css("display","block")
 	})
 	
 	//关闭弹窗
-	orderbgc.find(".close").click(function(){
+	orderbox.find(".close").click(function(){
+		orderbox.css("display","none")
 		orderbgc.css("display","none")
 	})
 	

@@ -17,6 +17,7 @@
                     width: 160px;
                     color:#947070;
                     overflow: hidden;
+                    cursor: pointer;
                     img{
                         float: left;
                         margin: 20px 8px 0 25px ;
@@ -25,14 +26,12 @@
                         float: left;
                         line-height: 60px;
                     }
-                    .click{
+                    
+                }
+                .click{
                         width: 155px;
                         border-left: 5px solid #e60013 ;
                         color: #e60013;
-                    }
-                    .border{
-                        border: 1px solod #efeee9;
-                    }
                 }
             }
         }
@@ -57,6 +56,7 @@
                         background-color: #f04e4e;
                         line-height: 40px;
                         color: #fff;
+                        cursor: pointer;
                     }
                 }
                 .customer-property{
@@ -175,18 +175,18 @@
                 }
             }
         
-            .k-gold{
-                
-                .k-gold-top{
+            .k-gold,.balance{
+                margin-bottom: 20px;
+                .k-gold-top,.balance-top{
                     text-align: center;
                     height: 210px;
                     position: relative;
                     margin-bottom: 20px;
                     background: url(../img/customerImg/kgold-bg.png) no-repeat center center;
-                    .k-sum{
+                    .k-sum,.my-balance{
                         font-size: 20px;
                         line-height: 62px;
-                        margin-top: 18px;
+                        padding-top: 18px;
                         color: #333333;
                     }
                     b{
@@ -211,10 +211,11 @@
                         position: absolute;
                         right: 20px;
                         top: 85px;
+                        cursor: pointer;
                     }
                 }
             
-                .k-gold-content{
+                .k-gold-content,.my-balance-content{
                     box-sizing: border-box;
                     padding-left: 36px;
                     background: #fff;
@@ -233,7 +234,7 @@
                             border-bottom: 1px solid #f1554b ;
                         }
                     }
-                    .Concrete{
+                    .had-Concrete,.used-Concrete{
                         min-height: 440px;
                         p{
                            font-size: 22px;
@@ -245,6 +246,134 @@
                         }
                     }
                     
+                }
+            }
+            //我的订单
+            .my-order{
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 30px;
+                min-height: 496px;
+                background: #fff;
+                margin-bottom: 20px;
+                .order-top{
+                    font-size: 20px;
+                    line-height: 78px;
+                    border-bottom: 1px solid #e0e3e5;
+                }
+                .order-detail{
+                    font-size: 14px;
+                    line-height: 30px;
+                    color: #333;
+                    text-align: center;
+                    p{
+                        margin-top: 67px;
+                        line-height:50px ;
+                    }
+                    .link-order{
+                        
+                        p{  
+                            margin: 0 0 0 393px;
+                            float: left;
+                            line-height: 30px;
+                        }
+                        .button{
+                            width: 110px;
+                            margin-left: 3px;
+                            box-sizing: border-box;
+                            border: 1px solid #a8a8a8;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            
+            //我的地址
+            .my-adress{
+                min-height: 515px;
+                font-size: 14px;
+                margin-bottom: 20px;
+                background: #fff;
+                padding: 0 30px;
+                .adress-top{
+                    font-size: 20px;
+                    line-height: 78px;
+                    border-bottom: 1px solid #e0e3e5;
+                }
+                .adress-text{
+                    p{
+                        line-height: 57px;
+                        text-indent: 20px;
+                        color: #585858;
+                    }
+                    .add-adress{
+                        line-height: 34px;
+                        width: 108px;
+                        text-align: center;
+                        color: #fb4545;
+                        border: 1px solid #fb4545 ;
+                        margin:0 0 20px 150px ;
+                        text-indent: 0;
+                        cursor: pointer;
+                    }
+                    b{
+                        display: block; 
+                        font-weight: normal;
+                        color: #646c6e;
+                        line-height: 20px;
+                        margin-left: 150px;
+                    }
+                }
+            }
+            
+            .my-info{
+                color: #333333;
+                font-size: 14px;
+                padding: 0 30px;
+                background: #fff;
+                margin-bottom: 20px;
+                .info-top{
+                    font-size: 20px;
+                    line-height: 78px;
+                    border-bottom: 1px solid #e0e3e5;
+                    margin-bottom: 30px;
+                }
+                .change-info{
+                    overflow: hidden;
+                    .info-class{
+                        width: 130px;
+                        padding: 13px 0 46px;
+                        float: left;
+                        overflow: hidden;
+                        img{
+                            float: left;
+                            padding-right: 18px;
+                        }
+                        p{
+                            float: left;
+                            line-height: 20px;
+                        }
+                    }
+                    .info{
+                        line-height: 20px;
+                        overflow: hidden;
+                        float: left;
+                        padding-top: 13px;
+                        .info-left{
+                            float: left;
+                            width: 472px;
+                        }
+                        .change-button{
+                            float: left;
+                            color: #e5534e;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                .border{
+                    height: 0;
+                    border-top: 1px solid #e0e3e5;
+                    padding-bottom: 30px;
                 }
             }
         }
