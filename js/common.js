@@ -24,6 +24,8 @@
                        $(this).stop().animate({
                                opacity: 1
                        }, 500)
+               }).click(function(){
+               	$(".loginbox").css("display","block")
                })
 
               var href = window.location.href;
@@ -39,5 +41,5 @@
                }
        });
 
-       $("footer").load("footer.html");
+       $("footer").load("footer.html");      
 })

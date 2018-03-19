@@ -8,4 +8,9 @@ $(function(){
 		$(this).addClass("click").siblings().removeClass("click");
 		divlist.eq($(this).index()).css("display","block").siblings().css("display","none");
 	})
+	
+	//点击登录
+	$(".home-login").on("click",".button,img",function(){
+		$(".loginbox").css("display","block")
+	})
 })

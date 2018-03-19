@@ -1,0 +1,225 @@
+.login{
+    position: fixed;
+    width: 500px;
+    background: url(../img/indexImg/logo.png) no-repeat center 40px;
+    background-color: #fff;
+    .login-top{
+        border-bottom: 1px solid #eee ;
+        overflow: hidden;
+        padding-top: 150px;
+        background: url(../img/indexImg/bodercenter.png) no-repeat center 185px;
+        .normal,.yanzheng {
+            width: 248px;
+            text-align: center;
+            font-size: 20px;
+            line-height: 92px;
+            color: #9999b2;
+            float: left;
+            font-weight: bold;
+        }
+        .normal{
+            margin-right: 3px;
+        }
+    }
+    .login-yanzheng,.login-normal{
+        .user,.check{
+            border-bottom: 1px solid #eee ;
+            overflow: hidden;
+            img{
+                float: left;
+                padding: 18px 28px 18px 115px;
+            }
+            input{
+                font-size: 16px;
+                line-height: 56px;
+                border: 0;
+                outline: none;
+                color: #c8c8c8;
+            }
+            .check-number{
+                float: right;
+                margin: 11px 30px 0 0;
+                width: 104px;
+                font-size: 12px;
+                line-height: 32px;
+                padding-top: 2px;
+                background: #c8c8c8;
+                color: #fff;
+                text-align: center;
+                cursor: pointer;
+            }
+            .rember{
+                .checkbox{
+                    display: none;
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 59px;
+                    color: #363636;
+                    float: right;
+                    margin-right: 45px;
+                }
+                .remberme{
+                    float: left;
+                    padding-left: 20px;
+                    margin-left: 112px;
+                    
+                }
+                .unchecked{
+                    background: url(../img/customerImg/black_uncheck.png) no-repeat 0 center;
+                }
+                .checked{
+                    background: url(../img/customerImg/red_check.png) no-repeat 0 center;
+                }
+            }
+        }
+    }
+    .login-normal{
+        .check{
+            border: 0;
+            .rember{
+                border-top: 1px solid #eee;
+            }
+        }
+    }
+    .login-bottom{
+        p{
+            font-size: 12px;
+            line-height: 59px;
+            margin-top: 12px;
+            color: #363636;
+            text-indent: 65px;
+            cursor: pointer;
+        }
+        .login-button{
+            font-size: 12px;
+            line-height: 62px;
+            color: #fff;
+            text-align: center;
+            background: #ed5f56;
+            cursor: pointer;
+        }
+    }
+}
+
+//注册
+.enroll{
+    position: fixed;
+    width: 500px;
+    background-color: #fff;
+    h3{
+      font-size: 18px;
+      line-height: 120px;
+      color: #999999;
+      padding-top: 30px;  
+      background: url(../img/indexImg/logo.png) no-repeat center 23px;
+      text-align: center;
+      border-bottom: 1px solid #eee ;
+    }
+    .user,.check,.password,.city,.name{
+        border-bottom: 1px solid #eee ;
+        overflow: hidden;
+        img{
+            float: left;
+            padding: 18px 28px 18px 115px;
+        }
+        input{
+            font-size: 16px;
+            line-height: 56px;
+            border: 0;
+            outline: none;
+            color: #c8c8c8;
+        }        
+    }
+    .right{
+        background: url(../img/customerImg/icon-right.png) no-repeat right 20px;
+    }
+    .check{
+        .check-number{
+                float: right;
+                margin: 11px 30px 0 0;
+                width: 104px;
+                font-size: 12px;
+                line-height: 32px;
+                padding-top: 2px;
+                background: #c8c8c8;
+                color: #fff;
+                text-align: center;
+            }
+    }
+    .city{
+       input{
+           width: 300px;
+        }
+    }
+    .name{
+        border: 0;
+        .sex{
+            float: right;
+            margin: 9px 45px 0 0 ;
+            p{  
+                float: left;
+                font-size: 14px;
+                line-height: 16px;
+                color: #cdcdcd;
+                padding: 0 9px 0 13px;
+                cursor: pointer;
+            }
+            .male{
+                border-right: 2px solid #d0dbed;
+            }
+            .click{
+                color: #E5534E;
+            }
+        }
+    }
+    .protocol{
+        border-bottom: 1px solid #eee ;
+        overflow: hidden;
+        img{
+            float: left;
+            padding: 14px 11px 24px 115px;
+        }
+        p{
+            float: left;
+            font-size: 14px;
+            line-height: 42px;
+            color: #999;
+            span{
+                font-weight: normal;
+                color: #e5534e;
+            }
+        }
+        .checkbox{
+            display: none;
+        }
+    }
+    .enroll-button{
+        font-size: 14px;
+        line-height: 62px;
+        color: #fff;
+        background: #c8c8c8;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+.login-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.error{     
+    display: none;
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    color: #E5534E;
+    height: 30px;
+    top: -6px;
+    margin-bottom: -6px;
+    background: url(../img/customerImg/input-error.png) no-repeat;
+    line-height: 38px;
+    text-align: center;
+     }  
