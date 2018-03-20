@@ -21,7 +21,7 @@ header {
  margin: 0 auto; }
 
 .header {
- overflow: hidden;
+    height: 70px;
  background-color: #fff; }
  .header div {
     float: left; }
@@ -141,3 +141,34 @@ footer footer {
     background: rgba(0, 0, 0, .4);
 }
 
+.header{
+    .user-right{
+        border-radius: 3px;
+        background: #fff;
+        float: right;
+        line-height: 70px;
+        color: #363636;
+        text-align: center;
+        cursor: pointer;
+        .username{
+            margin-left: 10px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .arrow{
+            display: inline-block;
+            width:10px;
+            background: url(../img/customerImg/arrow-down.png) no-repeat center center;
+        }
+        .hover{
+            background: url(../img/customerImg/arrow-up.png) no-repeat center center;
+        }
+        ul{
+            display: none;
+            .red-hover{
+                color: red;
+            }
+        }
+    }
+}

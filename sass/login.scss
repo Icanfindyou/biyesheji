@@ -16,6 +16,7 @@
             color: #9999b2;
             float: left;
             font-weight: bold;
+            cursor: pointer;
         }
         .normal{
             margin-right: 3px;
@@ -86,9 +87,9 @@
         p{
             font-size: 12px;
             line-height: 59px;
-            margin-top: 12px;
+            margin: 12px 0 0 65px;
             color: #363636;
-            text-indent: 65px;
+            width: 30px;
             cursor: pointer;
         }
         .login-button{
@@ -156,7 +157,7 @@
         border: 0;
         .sex{
             float: right;
-            margin: 9px 45px 0 0 ;
+            margin: 21px 25px 0 0 ;
             p{  
                 float: left;
                 font-size: 14px;

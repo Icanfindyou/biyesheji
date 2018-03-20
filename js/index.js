@@ -75,7 +75,7 @@
                                cont = 0;
                        }
                        banner(cont);
-               }, 5000)
+               }, 4000)
                function banner(cont) {
                        imglist.eq(cont).stop().fadeIn(1000).siblings().stop().fadeOut(1000);
                        if(cont % 2 == 0) {

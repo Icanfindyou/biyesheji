@@ -1,5 +1,7 @@
 .menu {
+    position: relative;
     padding-top: 71px;
+    height: auto;
     width: 1200px;
     margin: 0 auto;
     zoom: 1;
@@ -13,7 +15,7 @@
 }
 
 .menu .menu-left {
-    float: left;
+    position: absolute;
     width: 119px;
     background: #f9f6f0;
     border-right: 1px solid #f0f0f0;
@@ -37,6 +39,7 @@
 .menu .menu-right {
     width: 1080px;
     float: left;
+    margin-left: 120px;
     zoom: 1;
     &:after {
         content: '';
