@@ -8,16 +8,17 @@ $(function() {
 		var eerror = $(".enroll .error");
 		var lerror = $(".login .error");
 		var enrollconfi = {};		
-		if($.cookie("user") == "null"){
+		if($.cookie("user") == "null"||!$.cookie("user")){
 			var user = {};
 		}else{
 			var user = JSON.parse($.cookie("user"))
 		}
-		if($.cookie("remberpsw") == "null"){
+		if($.cookie("remberpsw") == "null"||!$.cookie("remberpsw")){
 			var remberpsw = {};
 		}else{
 			var remberpsw= JSON.parse($.cookie("remberpsw"))
 		}
+		console.log(user)
 		$(this).css({width:function(){
 			return $(document).width()
 		},height:function(){
@@ -71,7 +72,6 @@ $(function() {
 		if(!$.isEmptyObject(remberpsw)){
 			ologininp.eq(2).val(remberpsw.username)
 			loginpsw.val(remberpsw.password)
-			console.log($(".login .checkbox").prop("checked"))
 			$(".login .checkbox").prop("checked",true).next().addClass("checked")
 		}
 		//记住密码
@@ -261,6 +261,7 @@ $(function() {
 			}
 			if(!flag&&inpflag&&oinp.val()){
 				$.cookie("user",jsonstr);
+				window.location.reload();
 			}else{
 				alert("请正确填写信息")
 			}

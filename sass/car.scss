@@ -1,0 +1,102 @@
+.shopcar {
+  width: 400px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-size: 14px; }
+  .shopcar .car-top {
+    line-height: 70px;
+    overflow: hidden; }
+    .shopcar .car-top img {
+      float: left;
+      margin: 24px 102px 0 13px;
+      cursor: pointer; }
+    .shopcar .car-top p {
+      float: left;
+      cursor: pointer; }
+    .shopcar .car-top .mycar {
+      font-size: 24px;
+      color: #363636;
+      width: 120px; }
+    .shopcar .car-top .clear {
+      color: #666666;
+      margin: 0 10px 0 60px;
+      width: 70px; }
+  .shopcar .shoplist {
+    overflow: hidden; }
+    .shopcar .shoplist .shops {
+      overflow: hidden;
+      border-bottom: 1px solid #f2f2ef;
+      margin-bottom: 2px; }
+      .shopcar .shoplist .shops img {
+        width: 90px;
+        margin: 0 5px;
+        float: left; }
+      .shopcar .shoplist .shops .desc {
+        line-height: 20px;
+        float: left;
+        width: 162px; }
+        .shopcar .shoplist .shops .desc .title {
+          color: #363636;
+          word-break: break-all; }
+        .shopcar .shoplist .shops .desc .price {
+          color: #e5534e; }
+      .shopcar .shoplist .shops .docar {
+        padding: 6px 0 6px;
+        margin: 29px 10px 0 0;
+        float: right;
+        border: 1px solid #e6e6e6;
+        border-radius: 3px;
+        overflow: hidden; }
+        .shopcar .shoplist .shops .docar p {
+          width: 32px;
+          line-height: 16px;
+          height: 16px;
+          float: left;
+          text-align: center; }
+        .shopcar .shoplist .shops .docar .shopnum {
+          border-left: 1px solid #e6e6e6;
+          border-right: 1px solid #e6e6e6;
+          color: #27004f; }
+        .shopcar .shoplist .shops .docar .minus {
+          cursor: pointer;
+          background: url(../img/car/minus-red.png) no-repeat center center; }
+        .shopcar .shoplist .shops .docar .plus {
+          cursor: pointer;
+          background: url(../img/car/plus-green.png) no-repeat center center; }
+  .shopcar .car-bottom {
+    background-color: #e0534e;
+    zoom: 1; }
+    .shopcar .car-bottom:after {
+      　　content: '';
+      　　display: block;
+      　　height: 0;
+      　　clear: both;
+      　　overflow: hidden; }
+    .shopcar .car-bottom p {
+      float: left; }
+    .shopcar .car-bottom .shopcont {
+      width: 59px;
+      height: 51px;
+      color: #e4544f;
+      line-height: 42px;
+      text-align: center;
+      margin: -10px 9px 0 16px;
+      background: url(../img/car/carbox.png) no-repeat center center; }
+    .shopcar .car-bottom .shopsprice {
+      color: #fff;
+      line-height: 46px;
+      padding-top: 4px; }
+      .shopcar .car-bottom .shopsprice span {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 41px; }
+    .shopcar .car-bottom .checkout {
+      width: 120px;
+      line-height: 50px;
+      font-size: 18px;
+      float: right;
+      color: #fff;
+      text-align: center;
+      background: #c53e39;
+      cursor: pointer; }
