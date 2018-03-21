@@ -3,8 +3,11 @@
   position: fixed;
   bottom: 0;
   right: 0;
+  z-index: 20;
+  background: #fff;
   font-size: 14px; }
   .shopcar .car-top {
+      display: none;
     line-height: 70px;
     overflow: hidden; }
     .shopcar .car-top img {
@@ -23,6 +26,7 @@
       margin: 0 10px 0 60px;
       width: 70px; }
   .shopcar .shoplist {
+      display: none;
     overflow: hidden; }
     .shopcar .shoplist .shops {
       overflow: hidden;
@@ -65,7 +69,6 @@
           cursor: pointer;
           background: url(../img/car/plus-green.png) no-repeat center center; }
   .shopcar .car-bottom {
-    background-color: #e0534e;
     zoom: 1; }
     .shopcar .car-bottom:after {
       　　content: '';
@@ -100,3 +103,16 @@
       text-align: center;
       background: #c53e39;
       cursor: pointer; }
+      .shopcar .car-bottom .bottom-left{
+          background: #e0534e;
+          width: 280px;
+          float: left;
+          cursor: pointer;
+          zoom: 1;
+          &:after {
+              　　content: '';
+              　　display: block;
+              　　height: 0;
+              　　clear: both;
+              　　overflow: hidden; }
+      }

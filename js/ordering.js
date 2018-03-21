@@ -4,7 +4,6 @@
 	var products = $(".products");
 	var imglist = products.find("dt");
 	var orderbox =  $(".order-box");
-	$(".shopcar").load("car.html");
 	lilist.eq(0).addClass("focus").end().each(function(){
 		$(this).click(function(){
 			$(this).addClass("focus").siblings().removeClass("focus")

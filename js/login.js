@@ -18,7 +18,6 @@ $(function() {
 		}else{
 			var remberpsw= JSON.parse($.cookie("remberpsw"))
 		}
-		console.log(user)
 		$(this).css({width:function(){
 			return $(document).width()
 		},height:function(){
