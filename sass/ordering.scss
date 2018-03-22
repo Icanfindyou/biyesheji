@@ -124,13 +124,16 @@
     }
 }
 
-.orderbgc {
+.orderbgc,.shopcarbgc {
     z-index: 11;
     position: fixed;
     background: rgba(0, 0, 0, .4);
     display: none;
     top: 0;
     left: 0;}
+    .shopcarbgc{
+        z-index: 19;
+    }
     .order-box {
         position: absolute;
         width: 890px;

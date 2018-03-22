@@ -17,6 +17,10 @@
 		return $(document).width()
 	},height:function(){
 		return $(document).height()
+	}}).next().css({width:function(){
+		return $(document).width()
+	},height:function(){
+		return $(document).height()
 	}});
 	orderbox.css({"top":function(){
 		return ($(window).height()-orderbox.height())/2

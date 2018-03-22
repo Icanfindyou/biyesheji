@@ -53,11 +53,17 @@ $(function() {
 					$(".login-yanzheng").next().find("input[type='text']").val("").end()
 					.find(".error").css("display","none")
 					loginpsw.val("");
+					loginflag = false;
 				}else{
 					$(".login-normal").css("display","block").prev().css("display","none");
 					$(".login-normal").prev().find("input[type='text']").val("")
 					.end().find(".error").css("display","none");
-					
+					if(!$.isEmptyObject(remberpsw)){
+						ologininp.eq(2).val(remberpsw.username)
+						loginpsw.val(remberpsw.password)
+						$(".login .checkbox").prop("checked",true).next().addClass("checked")
+					}
+					loginflag = false;
 				}
 			})
 			
@@ -108,6 +114,7 @@ $(function() {
 			eerror.css("display","none");
 			lerror.css("display","none");
 			enroll.find(".checkbox").prop("checked",false);
+			$(".orderbgc").css("display","none")
 			flag = false;
 			loginflag = false;
 		})
@@ -228,15 +235,10 @@ $(function() {
 		
 
 		//点击判断登录
-		var ssss = {};
 		$(".login-button").click(function(){
 			if(!loginflag){
 				var ischeck = $(".login-normal").find(".checkbox").prop("checked");
-				if(ologininp.eq(0).val()==""){
-					$.cookie("loginuser",ologininp.eq(2).val());
-				}else{
-					$.cookie("loginuser",ologininp.eq(0).val());
-				}
+				
 				//判断是否记住密码
 				if(ischeck){
 					remberpsw.username = ologininp.eq(2).val();
@@ -246,7 +248,17 @@ $(function() {
 				}else{
 					$.cookie("remberpsw",null);
 				}
-				window.location.reload();
+				
+				if(ologininp.eq(0).val()==""&&ologininp.eq(2).val()!=""){
+					$.cookie("loginuser",ologininp.eq(2).val());
+					window.location.reload();
+				}
+				if(ologininp.eq(2).val()==""&&ologininp.eq(0).val()!=""){
+					$.cookie("loginuser",ologininp.eq(0).val());
+					window.location.reload();
+				}
+			}else{
+				alert("登录失败")
 			}
 		})
 		
@@ -259,7 +271,7 @@ $(function() {
 				flag = false;
 			}
 			if(!flag&&inpflag&&oinp.val()){
-				$.cookie("user",jsonstr);
+				$.cookie("user",jsonstr,{ expires: 7 });
 				window.location.reload();
 			}else{
 				alert("请正确填写信息")
